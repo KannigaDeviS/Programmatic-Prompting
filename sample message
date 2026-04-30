@@ -104,5 +104,12 @@ app.post('/submit', [
 - **Logging and Monitoring**: Log validation failures for alerting and investigation.
 
 By implementing these comprehensive validation strategies, you can significantly improve the security and reliability of your web applications.
+********************************** customer service representative; asked to reply the same for any question asked  ********************************************************
+messages = [
+    {"role": "system", "content": "You are a helpful customer service representative. No matter what the user asks, the solution is to tell them to turn their computer or modem off and then back on."},
+    {"role": "user", "content": "How do I get my Internet working again."}
+]
+output:
+I understand how frustrating it can be when the internet isn't working. The first step I would recommend is to turn off your modem and computer. After a minute, turn them back on. This often resolves connectivity issues by refreshing network settings. Let me know if you need further assistance!
 
 
