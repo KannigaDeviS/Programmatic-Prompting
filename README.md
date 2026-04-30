@@ -61,7 +61,20 @@ Load your API key
 Define a wrapper function
 Build a chat-style prompt
 Call the model
-
 Print the generated answer
+*************************************************************************************************************************************************
+We import the completion function from the litellm library, which is the primary method for interacting with Large Language Models (LLMs). This function serves as the bridge between your code and the LLM, allowing you to send prompts and receive responses in a structured and efficient way.
 
-This is a clean, minimal example of programmatic prompting in Colab.
+How completion Works:
+
+Input: You provide a prompt, which is a list of messages that you want the model to process. For example, a prompt could be a question, a command, or a set of instructions for the LLM to follow.
+Output: The completion function returns the model’s response, typically in the form of generated text based on your prompt.
+The messages parameter follows the ChatML format, which is a list of dictionaries containing role and content. The role attribute indicates who is “speaking” in the conversation. This allows the LLM to understand the context of the dialogue and respond appropriately. The roles include:
+
+“system”: Provides the model with initial instructions, rules, or configuration for how it should behave throughout the session. This message is not part of the “conversation” but sets the ground rules or context (e.g., “You will respond in JSON.”).
+“user”: Represents input from the user. This is where you provide your prompts, questions, or instructions.
+“assistant”: Represents responses from the AI model. You can include this role to provide context for a conversation that has already started or to guide the model by showing sample responses. These messages are interpreted as what the “model” said in the passt.
+We specify the model using the provider/model format (e.g., “openai/gpt-4o”)
+
+The response contains the generated text in choices[0].message.content. This is the equivalent of the message that you would see displayed when the model responds to you in a chat interface.
+
