@@ -16,3 +16,46 @@ messages = [
 
 response = generate_response(messages)
 print(response)
+
+"""
+output:
+```python
+def swap_keys_values(d):
+    """
+    Swaps the keys and values in the given dictionary.
+
+    Parameters:
+    d (dict): A dictionary with unique values.
+
+    Returns:
+    dict: A new dictionary with keys and values swapped.
+
+    Example:
+    >>> swap_keys_values({'a': 1, 'b': 2, 'c': 3})
+    {1: 'a', 2: 'b', 3: 'c'}
+    """
+    return {value: key for key, value in d.items()}
+```
+```python
+def swap_keys_values(d):
+    """
+    Swaps the keys and values in a given dictionary.
+    
+    Parameters:
+    d (dict): A dictionary with unique values.
+    
+    Returns:
+    dict: A new dictionary where the keys are the original values and the values are the original keys.
+    
+    Example:
+    >>> swap_keys_values({'a': 1, 'b': 2, 'c': 3})
+    {1: 'a', 2: 'b', 3: 'c'}
+    
+    Note:
+    - Assumes all values in the dictionary are unique.
+    - If the dictionary is empty, an empty dictionary is returned.
+    """
+    return {value: key for key, value in d.items()}
+```
+
+"""
