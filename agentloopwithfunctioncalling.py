@@ -1,3 +1,16 @@
+""" 
+✔ “List the contents of sample_data”
+→ Calls list_directory("sample_data")
+
+✔ “Read all the files in sample_data and tell me what they are”
+→ Calls read_all_files("sample_data")
+
+✔ “Read sample_data/testdata.txt”
+→ Calls read_file("sample_data/testdata.txt")
+
+✔ “What files are in the current directory?”
+→ Calls list_files()
+"""
 # -*- coding: utf-8 -*-
 """AgentLoopWithFunctionCalling.ipynb
 
